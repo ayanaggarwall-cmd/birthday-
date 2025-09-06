@@ -64,6 +64,45 @@ h1 {
 .gallery img:hover {
   transform: scale(1.1);
 }
+/* Slider Styles */
+.slider {
+  position: relative;
+  max-width: 600px;
+  margin: 30px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.slides img {
+  width: 100%;
+  display: none;
+  border-radius: 15px;
+}
+
+/* Show the first image initially */
+.slides img:first-child {
+  display: block;
+}
+
+/* Buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.8);
+}
 
 /* Letter */
 .message {
@@ -76,3 +115,4 @@ h1 {
   color: #fff;
   line-height: 1.6;
 }
+
