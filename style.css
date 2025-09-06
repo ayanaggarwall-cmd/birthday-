@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7); /* sweet pink gradient */
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Navigation Bar */
+nav {
+  background: rgba(255,255,255,0.2);
+  padding: 10px;
+}
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Title */
+h1 {
+  margin-top: 50px;
+  font-size: 3em;
+  animation: glow 2s infinite alternate;
+}
+@keyframes glow {
+  from { text-shadow: 0 0 10px #fff, 0 0 20px #ff7eb9, 0 0 30px #ff65a3; }
+  to { text-shadow: 0 0 20px #fff, 0 0 30px #ff2e63, 0 0 40px #ff0080; }
+}
+
+/* Balloons */
+.balloon {
+  position: absolute;
+  bottom: -150px;
+  font-size: 50px;
+  animation: floatUp 6s linear infinite;
+}
+@keyframes floatUp {
+  from { transform: translateY(0); }
+  to { transform: translateY(-120vh); }
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.gallery img {
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* Letter */
+.message {
+  background: rgba(255,255,255,0.2);
+  padding: 20px;
+  margin: 50px auto;
+  max-width: 600px;
+  border-radius: 15px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.6;
+}
